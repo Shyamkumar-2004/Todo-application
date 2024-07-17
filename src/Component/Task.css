@@ -1,0 +1,60 @@
+.task {
+    transition: 0.7s ease-in-out;
+    transform: translateX(-100vw);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.task.visible {
+    transform: translateX(0);
+}
+
+.task.completed {
+    background-color: #dff0d8; /* Green background for completed tasks */
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8d7da; /* Red background for task headers */
+    padding: 10px;
+    border-bottom: 1px solid #dc3545;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f8d7da; /* Red background for task footer */
+    padding: 10px;
+    border-top: 1px solid #dc3545;
+}
+
+.icons i {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    transition: color 0.3s ease-in-out;
+}
+
+.icons i:hover {
+    cursor: pointer;
+    color: #007bff; /* Blue color on hover */
+}
+
+.taskTime {
+    font-size: 0.8rem;
+    color: #6c757d; /* Gray color for task time */
+    display: flex;
+    align-items: center;
+}
+
+.taskTime i {
+    margin-left: 5px;
+}
